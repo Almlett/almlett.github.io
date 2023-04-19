@@ -87,3 +87,29 @@
 .btn-success{
     background-color: #324ea8 !important;
 }
+
+.social-buttons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .social-buttons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .social-buttons a:hover {
+    background-color: #324ea8;
+    color: white;
+  }
+  

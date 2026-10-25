@@ -1,279 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <title>Michel Andrade</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Hub</title>
+  <meta name="description" content="Índice personal: rutinas de ejercicio y seguimiento multimedia.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Michel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                </ul>
-                
-            </div>
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+
+  <main class="container">
+    <header class="hero">
+      <p class="date" id="date"></p>
+      <h1><span id="greeting">Hola</span>, Alan</h1>
+      <p class="subtitle">¿A dónde vamos hoy?</p>
+    </header>
+
+    <section class="cards">
+      <a class="card card--fitness" href="https://fitness-h39m.onrender.com" data-wake="https://fitness-h39m.onrender.com">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M17.5 6.5v11M3 9.5v5M21 9.5v5M6.5 12h11"/></svg>
         </div>
-    </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Michel</h2>
-                <p class="hero_desc">I am a professional developer</p>
-            </div>
-            </div>
+        <div class="card__body">
+          <h2>Rutinas de ejercicio</h2>
+          <p>Planifica tus entrenamientos y registra tu progreso.</p>
+          <span class="hint">Puede tardar unos segundos en despertar</span>
         </div>
-    </section>
+        <span class="card__arrow" aria-hidden="true">→</span>
+      </a>
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about.jpg" class= "imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p>Hi, I'm Alan Michel, a 28-year-old developer with a passion for software development and DevOps. I'm passionate about creating software solutions that make people's lives easier and more efficient. I have a strong background in programming languages such as Python, Javascript, C#, and SQL, and I'm experienced in using various frameworks and libraries, including Django, React JS, Vue JS, Flask, and Express JS. I also have expertise in software deployment and management, including Linux/Ubuntu, Git, Docker, and AWS.</p>
-                    <p>Throughout my career, I've had the opportunity to work on a variety of projects, ranging from legacy code maintenance to system restructuring and automation. I'm highly analytical and skilled in abstracting complex problems and organizing them into manageable tasks for myself and my team. I'm also experienced in project management and have led teams of up to 10 people, assigning tasks based on each team member's strengths and working together to achieve our goals.</p>
-                </div>
-            </div>
-    </section>
-
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+      <a class="card card--media" href="https://myhub.michelandrade.com/">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3z"/></svg>
         </div>
-    </section>
-
-    <!-- portfolio section-->
-    <!-- <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    -->
-
-    <!-- contact section-->
-    <!--
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
-
-            </div>
+        <div class="card__body">
+          <h2>Multimedia</h2>
+          <p>Seguimiento de series, películas, libros y más.</p>
         </div>
+        <span class="card__arrow" aria-hidden="true">→</span>
+      </a>
     </section>
-  
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+    <footer class="footer">
+      <span id="clock"></span>
+    </footer>
+  </main>
 
+  <script src="script.js"></script>
 </body>
-
 </html>

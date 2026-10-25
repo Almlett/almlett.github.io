@@ -119,6 +119,40 @@ body {
   gap: 20px;
 }
 
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tile .card { flex: 1; }
+
+/* Enlace discreto al panel del hosting */
+.host {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  animation: rise 0.7s ease 0.2s both;
+}
+.host svg { width: 14px; height: 14px; }
+.host strong { font-weight: 600; color: var(--text); }
+.host:hover, .host:focus-visible {
+  color: var(--text);
+  background: var(--card-hover);
+  border-color: var(--muted);
+  outline: none;
+}
+
 .card {
   --accent: var(--fitness);
   position: relative;

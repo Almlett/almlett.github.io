@@ -1,3 +1,3 @@
 # michelandrade.com
 
-Índice personal con accesos a mis apps: rutinas de ejercicio y multimedia.
+Índice personal con accesos a mis apps: rutinas de ejercicio, multimedia y organización personal (LifeOS).

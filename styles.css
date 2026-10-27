@@ -11,6 +11,12 @@
   --fitness: #22c55e;
   --media: #a855f7;
   --lifeos: #f59e0b;
+  --food: #f97316;
+  --finance: #10b981;
+  --blog: #3b82f6;
+  --story: #ec4899;
+  --family: #eab308;
+  --homelab: #64748b;
   --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
@@ -27,6 +33,12 @@
   --fitness: #16a34a;
   --media: #9333ea;
   --lifeos: #d97706;
+  --food: #ea580c;
+  --finance: #059669;
+  --blog: #2563eb;
+  --story: #db2777;
+  --family: #ca8a04;
+  --homelab: #475569;
   --shadow: 0 20px 50px rgba(30, 35, 60, 0.15);
 }
 
@@ -91,13 +103,13 @@ body {
 .container {
   min-height: 100vh;
   min-height: 100dvh;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 80px 16px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 48px;
+  gap: 40px;
 }
 
 .hero { text-align: center; animation: rise 0.7s ease both; }
@@ -219,6 +231,67 @@ body {
 }
 .card:hover .card__arrow { transform: translateX(6px); color: var(--accent); }
 
+/* Tarjetas próximamente (sin función todavía) */
+.soon { display: flex; flex-direction: column; gap: 16px; }
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--card-border);
+}
+
+.card--soon {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "icon badge" "body body";
+  align-items: start;
+  align-content: start;
+  cursor: default;
+  padding: 22px 22px 24px;
+  gap: 16px;
+  box-shadow: none;
+  animation-delay: 0.25s;
+}
+.card--soon .card__icon { grid-area: icon; }
+.card--soon .card__body { grid-area: body; }
+.card--soon .badge { grid-area: badge; justify-self: end; }
+.card--soon .card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  opacity: 0.85;
+}
+.card--soon .card__icon svg { width: 26px; height: 26px; }
+.card--soon h2 { font-size: 1.1rem; }
+.card--soon p { font-size: 0.88rem; }
+
+.card--food    { --accent: var(--food); }
+.card--finance { --accent: var(--finance); }
+.card--blog    { --accent: var(--blog); }
+.card--story   { --accent: var(--story); }
+.card--family  { --accent: var(--family); }
+.card--homelab { --accent: var(--homelab); }
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
 .footer {
   text-align: center;
   color: var(--muted);
@@ -231,11 +304,24 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* En tablet (2 columnas) la tarjeta impar sobrante ocupa todo el ancho */
+@media (min-width: 600px) and (max-width: 919px) {
+  .tile:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
 @media (max-width: 480px) {
   .container { padding-top: 72px; gap: 36px; }
   .card { padding: 20px 18px; gap: 14px; }
   .card__icon { width: 50px; height: 50px; }
   .card__icon svg { width: 26px; height: 26px; }
+  .card--soon {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "icon body badge";
+    padding: 18px;
+    gap: 14px;
+  }
+  .card--soon .card__icon { width: 44px; height: 44px; }
+  .card--soon .card__icon svg { width: 22px; height: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

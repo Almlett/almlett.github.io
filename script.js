@@ -41,8 +41,3 @@ document.querySelectorAll(".card").forEach((card) => {
     card.style.setProperty("--my", `${e.clientY - r.top}px`);
   });
 });
-
-// Despierta el servidor de Render (plan gratis se duerme) en cuanto abres el índice
-document.querySelectorAll("[data-wake]").forEach((el) => {
-  fetch(el.dataset.wake, { mode: "no-cors", cache: "no-store" }).catch(() => {});
-});

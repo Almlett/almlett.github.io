@@ -8,7 +8,7 @@
   --blob1: #7c3aed;
   --blob2: #06b6d4;
   --blob3: #f43f5e;
-  --fitness: #22c55e;
+  --core: #22c55e;
   --media: #a855f7;
   --lifeos: #f59e0b;
   --food: #f97316;
@@ -30,7 +30,7 @@
   --blob1: #c4b5fd;
   --blob2: #a5f3fc;
   --blob3: #fecdd3;
-  --fitness: #16a34a;
+  --core: #16a34a;
   --media: #9333ea;
   --lifeos: #d97706;
   --food: #ea580c;
@@ -168,7 +168,7 @@ body {
 }
 
 .card {
-  --accent: var(--fitness);
+  --accent: var(--core);
   position: relative;
   display: flex;
   align-items: center;
@@ -187,7 +187,7 @@ body {
   animation: rise 0.7s ease both;
 }
 .card--media { --accent: var(--media); animation-delay: 0.1s; }
-.card--fitness { animation-delay: 0.05s; }
+.card--core { animation-delay: 0.05s; }
 .card--lifeos { --accent: var(--lifeos); animation-delay: 0.15s; }
 
 .card::before {

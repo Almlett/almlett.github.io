@@ -11,7 +11,7 @@
   --core: #ff5c63;
   --media: #00f5d4;
   --lifeos: #9b5de5;
-  --food: #f97316;
+  --food: #ff8c42;
   --finance: #10b981;
   --blog: #3b82f6;
   --story: #ec4899;
@@ -33,7 +33,7 @@
   --core: #e5484f;
   --media: #0fb5a0;
   --lifeos: #8b4fd8;
-  --food: #ea580c;
+  --food: #c2410c;
   --finance: #059669;
   --blog: #2563eb;
   --story: #db2777;
@@ -189,6 +189,7 @@ body {
 .card--media { --accent: var(--media); animation-delay: 0.1s; }
 .card--core { animation-delay: 0.05s; }
 .card--lifeos { --accent: var(--lifeos); animation-delay: 0.15s; }
+.card--food:not(.card--soon) { animation-delay: 0.2s; }
 
 .card::before {
   content: "";

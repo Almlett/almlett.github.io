@@ -173,7 +173,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 26px 24px;
+  padding: 26px 24px 30px;
   border-radius: 22px;
   background: var(--card);
   border: 1px solid var(--card-border);
@@ -236,6 +236,20 @@ body {
   transition: transform 0.25s, color 0.25s;
 }
 .card:hover .card__arrow { transform: translateX(6px); color: var(--accent); }
+
+/* Versión de cada app, abajo a la derecha de su tarjeta */
+.card__version {
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  opacity: 0.8;
+  transition: color 0.25s, opacity 0.25s;
+}
+.card:hover .card__version { color: var(--accent); opacity: 1; }
 
 /* Tarjetas próximamente (sin función todavía) */
 .soon { display: flex; flex-direction: column; gap: 16px; }

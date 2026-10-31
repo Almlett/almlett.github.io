@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Hub</title>
   <meta name="description" content="Índice personal: rutinas de ejercicio y seguimiento multimedia.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="icon" href="icons/michelandrade.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/michelandrade.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -33,8 +34,7 @@
     <section class="cards">
       <div class="tile tile--core">
         <a class="card card--core" href="https://core.michelandrade.com">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M17.5 6.5v11M3 9.5v5M21 9.5v5M6.5 12h11"/></svg>
+          <div class="card__icon card__icon--app"><img src="icons/core.svg" alt="" width="60" height="60">
           </div>
           <div class="card__body">
             <h2>CORE</h2>
@@ -52,8 +52,7 @@
 
       <div class="tile tile--media">
         <a class="card card--media" href="https://myhub.michelandrade.com/">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3z"/></svg>
+          <div class="card__icon card__icon--app"><img src="icons/myhub.svg" alt="" width="60" height="60">
           </div>
           <div class="card__body">
             <h2>MYHUB</h2>
@@ -70,8 +69,7 @@
       </div>
       <div class="tile tile--lifeos">
         <a class="card card--lifeos" href="https://lifeos.michelandrade.com/">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8.5 14.5l2 2 4.5-4.5"/></svg>
+          <div class="card__icon card__icon--app"><img src="icons/lifeos.svg" alt="" width="60" height="60">
           </div>
           <div class="card__body">
             <h2>LIFEOS</h2>
@@ -159,6 +157,8 @@
 
     <footer class="footer">
       <span id="clock"></span>
+      <span class="footer__sep" aria-hidden="true">·</span>
+      <span class="footer__version" title="Versión de michelandrade.com">v1.0.0</span>
     </footer>
   </main>
 

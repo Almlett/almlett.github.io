@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- LifeOS: órbitas con el check al centro (mismo motivo que su login) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2240"/><stop offset="1" stop-color="#0b1326"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9b5de5" stop-opacity=".5"/><stop offset="1" stop-color="#9b5de5" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="200" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#b9cac4" stroke-opacity=".3" stroke-width="10" stroke-dasharray="3 26" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#9b5de5" stroke-opacity=".7" stroke-width="12"/>
+  <circle cx="256" cy="256" r="92" fill="#9b5de5"/>
+  <path d="M212 260l30 30 58-64" fill="none" stroke="#0b1326" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="126" cy="331" r="26" fill="#f15bb5"/>
+  <circle cx="256" cy="66" r="18" fill="#9b5de5"/>
+  <circle cx="400" cy="210" r="13" fill="#b9cac4" fill-opacity=".7"/>
+</svg>

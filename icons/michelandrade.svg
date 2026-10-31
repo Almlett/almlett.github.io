@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- michelandrade.com: una "M" hecha constelación; cada nodo es una app con su acento -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2240"/><stop offset="1" stop-color="#0b1326"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9b5de5" stop-opacity=".45"/><stop offset="1" stop-color="#9b5de5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="m" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff5c63"/><stop offset=".5" stop-color="#9b5de5"/><stop offset="1" stop-color="#00f5d4"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="210" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#b9cac4" stroke-opacity=".28" stroke-width="8" stroke-dasharray="2 26" stroke-linecap="round"/>
+  <polyline points="126,380 126,142 256,300 386,142 386,380" fill="none" stroke="url(#m)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="126" cy="380" r="30" fill="#ff5c63"/>
+  <circle cx="126" cy="142" r="30" fill="#f15bb5"/>
+  <circle cx="256" cy="300" r="38" fill="#f1f5ff"/>
+  <circle cx="386" cy="142" r="30" fill="#9b5de5"/>
+  <circle cx="386" cy="380" r="30" fill="#00f5d4"/>
+  <circle cx="256" cy="300" r="14" fill="#9b5de5"/>
+</svg>

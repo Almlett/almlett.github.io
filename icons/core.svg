@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Core: anillos de entrenamiento y latido (mismo motivo que su login) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2240"/><stop offset="1" stop-color="#0b1326"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff5c63" stop-opacity=".5"/><stop offset="1" stop-color="#ff5c63" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="190" fill="url(#glow)"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#00f5d4" stroke-opacity=".45" stroke-width="10" stroke-dasharray="2 30" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="148" fill="none" stroke="#ff5c63" stroke-opacity=".5" stroke-width="12"/>
+  <circle cx="256" cy="60" r="16" fill="#ff5c63"/>
+  <polyline points="56,268 160,268 180,238 200,268 222,268 242,196 268,352 296,124 322,318 342,268 456,268" fill="none" stroke="#ff5c63" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

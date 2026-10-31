@@ -8,9 +8,9 @@
   --blob1: #7c3aed;
   --blob2: #06b6d4;
   --blob3: #f43f5e;
-  --core: #22c55e;
-  --media: #a855f7;
-  --lifeos: #f59e0b;
+  --core: #ff5c63;
+  --media: #00f5d4;
+  --lifeos: #9b5de5;
   --food: #f97316;
   --finance: #10b981;
   --blog: #3b82f6;
@@ -30,9 +30,9 @@
   --blob1: #c4b5fd;
   --blob2: #a5f3fc;
   --blob3: #fecdd3;
-  --core: #16a34a;
-  --media: #9333ea;
-  --lifeos: #d97706;
+  --core: #e5484f;
+  --media: #0fb5a0;
+  --lifeos: #8b4fd8;
   --food: #ea580c;
   --finance: #059669;
   --blog: #2563eb;
@@ -219,6 +219,9 @@ body {
   box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 40%, transparent);
 }
 .card__icon svg { width: 30px; height: 30px; }
+/* Apps con icono propio: el SVG ya trae su fondo, sin caja de color */
+.card__icon--app { background: none; overflow: hidden; }
+.card__icon--app img { width: 100%; height: 100%; display: block; }
 
 .card__body { flex: 1; min-width: 0; }
 .card h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 4px; }
@@ -300,6 +303,8 @@ body {
   font-size: 0.9rem;
   font-variant-numeric: tabular-nums;
 }
+.footer__sep { margin: 0 8px; }
+.footer__version { opacity: 0.8; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(16px); }

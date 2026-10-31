@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- MyHub: constelación hub + tres medios (mismo motivo que su login) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2240"/><stop offset="1" stop-color="#0b1326"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#00f5d4" stop-opacity=".5"/><stop offset="1" stop-color="#00f5d4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="200" fill="url(#glow)"/>
+  <g stroke="#b9cac4" stroke-opacity=".35" stroke-width="6">
+    <line x1="256" y1="96" x2="160" y2="56"/>
+    <line x1="256" y1="96" x2="352" y2="60"/>
+    <line x1="118" y1="392" x2="56" y2="440"/>
+    <line x1="394" y1="392" x2="456" y2="430"/>
+  </g>
+  <g fill="#b9cac4" fill-opacity=".6">
+    <circle cx="160" cy="56" r="10"/><circle cx="352" cy="60" r="10"/>
+    <circle cx="56" cy="440" r="10"/><circle cx="456" cy="430" r="10"/>
+    <circle cx="70" cy="200" r="9"/><circle cx="446" cy="230" r="9"/>
+  </g>
+  <g stroke="#00f5d4" stroke-width="26" stroke-linecap="round">
+    <line x1="256" y1="214" x2="256" y2="140"/>
+    <line x1="220" y1="282" x2="150" y2="352"/>
+    <line x1="292" y1="282" x2="362" y2="352"/>
+  </g>
+  <g fill="#00f5d4">
+    <circle cx="256" cy="256" r="62"/>
+    <circle cx="256" cy="104" r="42"/>
+    <circle cx="124" cy="384" r="42"/>
+    <circle cx="388" cy="384" r="42"/>
+  </g>
+</svg>

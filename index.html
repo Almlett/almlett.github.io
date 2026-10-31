@@ -105,22 +105,29 @@
           <span aria-hidden="true">↗</span>
         </a>
       </div>
-    </section>
-
-    <section class="soon" aria-labelledby="soonTitle">
-      <h2 class="section-title" id="soonTitle">Próximamente</h2>
-      <div class="cards cards--soon">
-        <article class="card card--soon card--finance" aria-disabled="true">
-          <div class="card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M16 15h2"/></svg>
+      <div class="tile tile--finance">
+        <a class="card card--finance" href="https://flow.michelandrade.com/">
+          <div class="card__icon card__icon--app"><img src="icons/flow.svg" alt="" width="60" height="60">
           </div>
           <div class="card__body">
             <h2>FLOW</h2>
             <p class="card__subtitle">Finanzas</p>
             <p>Administra gastos, ingresos y presupuestos.</p>
           </div>
-          <span class="badge">Pronto</span>
-        </article>
+          <span class="card__version" title="Versión de Flow">v1.0.0</span>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="host" href="https://vercel.com/dashboard" target="_blank" rel="noopener" title="Abrir el panel de Vercel">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l10 18H2z"/></svg>
+          Alojado en <strong>Vercel</strong>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="soon" aria-labelledby="soonTitle">
+      <h2 class="section-title" id="soonTitle">Próximamente</h2>
+      <div class="cards cards--soon">
         <article class="card card--soon card--blog" aria-disabled="true">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>
@@ -168,7 +175,7 @@
     <footer class="footer">
       <span id="clock"></span>
       <span class="footer__sep" aria-hidden="true">·</span>
-      <span class="footer__version" title="Versión de michelandrade.com">v1.2.1</span>
+      <span class="footer__version" title="Versión de michelandrade.com">v1.3.0</span>
     </footer>
   </main>
 

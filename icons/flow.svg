@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Flow: corrientes que suben hacia una moneda (mismo motivo que su login) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2240"/><stop offset="1" stop-color="#0b1326"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#10b981" stop-opacity=".5"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="268" r="200" fill="url(#glow)"/>
+  <path d="M96 392C176 392 200 318 262 318S336 252 392 252" fill="none" stroke="#10b981" stroke-opacity=".35" stroke-width="22" stroke-linecap="round"/>
+  <path d="M96 336C176 336 200 262 262 262S336 196 392 196" fill="none" stroke="#10b981" stroke-opacity=".6" stroke-width="26" stroke-linecap="round"/>
+  <path d="M96 280C176 280 200 206 262 206S330 148 362 148" fill="none" stroke="#10b981" stroke-width="32" stroke-linecap="round"/>
+  <circle cx="400" cy="132" r="44" fill="#ffc857"/>
+  <circle cx="400" cy="132" r="28" fill="none" stroke="#0b1326" stroke-opacity=".35" stroke-width="8"/>
+  <circle cx="132" cy="150" r="13" fill="#b9cac4" fill-opacity=".7"/>
+  <circle cx="420" cy="380" r="16" fill="#ffc857" fill-opacity=".8"/>
+</svg>

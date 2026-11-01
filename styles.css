@@ -190,6 +190,7 @@ body {
 .card--core { animation-delay: 0.05s; }
 .card--lifeos { --accent: var(--lifeos); animation-delay: 0.15s; }
 .card--food:not(.card--soon) { animation-delay: 0.2s; }
+.card--blog:not(.card--soon) { animation-delay: 0.25s; }
 
 .card::before {
   content: "";

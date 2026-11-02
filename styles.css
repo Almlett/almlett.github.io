@@ -15,7 +15,6 @@
   --finance: #10b981;
   --blog: #3b82f6;
   --story: #ec4899;
-  --family: #eab308;
   --homelab: #64748b;
   --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
@@ -37,7 +36,6 @@
   --finance: #059669;
   --blog: #2563eb;
   --story: #db2777;
-  --family: #ca8a04;
   --homelab: #475569;
   --shadow: 0 20px 50px rgba(30, 35, 60, 0.15);
 }
@@ -300,7 +298,6 @@ body {
 .card--finance { --accent: var(--finance); }
 .card--blog    { --accent: var(--blog); }
 .card--story   { --accent: var(--story); }
-.card--family  { --accent: var(--family); }
 .card--homelab { --accent: var(--homelab); }
 
 .badge {

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- OmniStory: el anillo de la saga cruzado por el Eje dorado (mismo isotipo que la app) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a1b22"/><stop offset="1" stop-color="#0e0f13"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#b8925a" stop-opacity=".35"/><stop offset="1" stop-color="#b8925a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="200" fill="url(#glow)"/>
+  <g transform="translate(64 64) scale(6)">
+    <path d="M29.4 10.15 A22 22 0 0 0 29.4 53.85" fill="none" stroke="#E8E1D3" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M34.6 10.15 A22 22 0 0 1 34.6 53.85" fill="none" stroke="#E8E1D3" stroke-width="3.2" stroke-linecap="round"/>
+    <line x1="32" y1="3" x2="32" y2="61" stroke="#B8925A" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="12.95" cy="21" r="3.4" fill="#0E0F13" stroke="#E8E1D3" stroke-width="2.2"/>
+    <circle cx="51.05" cy="43" r="3.4" fill="#0E0F13" stroke="#E8E1D3" stroke-width="2.2"/>
+    <circle cx="32" cy="32" r="4.2" fill="#B8925A"/>
+  </g>
+</svg>

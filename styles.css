@@ -14,7 +14,7 @@
   --food: #ff8c42;
   --finance: #10b981;
   --blog: #3b82f6;
-  --story: #ec4899;
+  --story: #b8925a;
   --homelab: #ffc857;
   --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
@@ -35,7 +35,7 @@
   --food: #c2410c;
   --finance: #059669;
   --blog: #2563eb;
-  --story: #db2777;
+  --story: #8f6d3d;
   --homelab: #b45309;
   --shadow: 0 20px 50px rgba(30, 35, 60, 0.15);
 }
@@ -185,6 +185,7 @@ body {
   animation: rise 0.7s ease both;
 }
 .card--media { --accent: var(--media); animation-delay: 0.1s; }
+.card--story:not(.card--soon) { animation-delay: 0s; }
 .card--core { animation-delay: 0.05s; }
 .card--lifeos { --accent: var(--lifeos); animation-delay: 0.15s; }
 .card--food:not(.card--soon) { animation-delay: 0.2s; }

@@ -1,0 +1,33 @@
+# Versiones de las tarjetas: cada 3 horas (y a mano desde Actions) lee la última Release de
+# cada app y la escribe en index.html. Necesita el secreto APPS_TOKEN: un token de GitHub de
+# solo lectura (Contents: read) sobre los 8 repos michel_andrade__*.
+name: Versiones de las apps
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: versiones
+  cancel-in-progress: false
+
+jobs:
+  versiones:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer las Releases y actualizar index.html
+        env:
+          APPS_TOKEN: ${{ secrets.APPS_TOKEN }}
+        run: python3 .github/scripts/versiones.py
+      - name: Guardar si cambió
+        run: |
+          if git diff --quiet index.html; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898783+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Versiones de las tarjetas al día"
+          git push
